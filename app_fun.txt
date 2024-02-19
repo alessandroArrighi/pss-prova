@@ -1,0 +1,10 @@
+Funzionalità minimali:
+   - Gestire la 'corsa' durante la partita
+   - Creare il proprio profilo
+   - Gestire il punteggio di ogni partita
+   - Gestire le collisioni con gli ostacoli
+
+Funzionalità opzionali:
+   - Possibilità di accedere alla modalità 'pausa' durante una partita
+   - Generare armi/equipaggiamenti durante la partita
+   - In correlazione con armi/equipaggiamenti, generare ostacoli differenti, coerenti con le aggiunte possedute
