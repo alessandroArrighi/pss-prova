@@ -8,3 +8,14 @@ Funzionalità opzionali:
    - Possibilità di accedere alla modalità 'pausa' durante una partita
    - Generare armi/equipaggiamenti durante la partita
    - In correlazione con armi/equipaggiamenti, generare ostacoli differenti, coerenti con le aggiunte possedute
+
+
+
+Salto  movimento
+Movimento dello schermo  creazione immagine?, continua andare avanti, aggiunta di ostacoli, funzione di pausa
+Gestione collisione 
+Punteggio  in base al tempo
+
+N°1  Schermo grafica movimento, punteggio, incremento della velocità, funzione di pausa (no grafica)
+N°2  Drago: hitbox (collisione), salto
+N°3  generazione ostacoli e loro collisioni, ‘logica spawn’
