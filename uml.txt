@@ -1,0 +1,9 @@
+associzione: un oggetto ne 'usa' un altro. Durante la creazione della classe, un campo di una specifica classe. Nella classe A c'è un campo di tipo B
+composizione: un oggetto è composto da un altro oggetto 'ha un'. Il costruttore assegna ad un campo l'istanza di un nuovo oggetto. Nella classe A c'è un campo 'b' di tipo B, e il costruttore inizializza 'b' con un nuovo oggetto
+aggregazione: un oggetto aggrega altri oggetti. Il costruttore assegna ad un campo il valore passato come parametro 'ha un'. Nella classe A c'è un campo 'b' di tipo B, e il costruttore inizializza 'b' con il valore di un oggetto di tipo B passato come parametro
+specializzazione: un oggetto è una specializzazione di un altro oggetto 'è un'. L'oggetto è una forma specializzata di un oggetto (ereditarietà)
+
+Nella modellazione UML si utilizzano gli archi per indicare una relazione particolare fra due classi differenti: 
+    - rombo == composizione
+    - freccia == associazione
+    - triangolo == specializzazione / generalizzazione
