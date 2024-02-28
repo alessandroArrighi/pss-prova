@@ -25,7 +25,7 @@ All’avvio dell’applicativo viene data la possibilità di creare un profilo p
 
 # Analisi e modello del dominio:
 
-Ad ogni avvio di partita il character verrà generato in una mappa contenente gli ostacoli che dovranno essere evitati. Dragon Dash permette ad un utente di controllare il character. La partita avrà difficoltà crescente all'avanzare del tempo di gioco. Sarà possibile per l'utente creare un profilo personale per raccogliere i propri risultati di gioco e classificarsi nella leader-board. Ad ogni avvio di applicazione s
+Ad ogni avvio di partita il character controllato dall'utente verrà generato in una mappa contenente gli ostacoli che dovranno essere evitati. La partita avrà difficoltà crescente all'avanzare del tempo di gioco. Ad ogni avvio di applicazione il gioco sarà navigabile tramite un menu iniziale. Tramite quest'ultimo sarà possibile per l'utente creare un profilo personale, visionare i propri risultati di gioco e consultare la leader-board.
 
 Movimento dello schermo
 
