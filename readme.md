@@ -34,48 +34,52 @@ Movimento dello schermo
 
 
 
-%% Partita, Character, Mappa, Ostacoli, Menu. Profilo, Leaderboard
+%% Partita, Character, Mappa, Ostacoli, Menu. Profilo, Leaderboard 
+
 classDiagram
 
-class Partita
+class Partita {
+    +getScore()
+    +collision(Ostacolo, Character)?
+    %% da vedere, se la funzione è corretta
+}
 <<interface>> Partita
 
-class Character
+class Character {
+    +getPosition()
+}
 <<interface>> Character
 
-class Mappa
+%% getOstacoli(): List <Ostacoli>
+class Mappa 
 <<interface>> Mappa
 
-class Ostacoli
-<<interface>> Ostacoli
+class Ostacolo {
+    +getPosition()
+}
+<<interface>> Ostacolo
 
-class Menu
+class Menu {
+    +startGame()
+    +createProfile()
+    +viewScores(Profilo)
+    +viewLeaderboard()
+}
 <<interface>> Menu
 
-class Profilo
+class Profilo {
+    +setScore()?
+    %% da vedere, se lasciare sottinteso in LB il passaggio dei punteggi
+}
 <<interface>> Profilo
 
 class Leaderboard
 <<interface>> Leaderboard
 
-
-
-%% AI --* Personality
-%% AI -- Suggestion
-%% AI -- Event
-%% AI --o Kitchen
-
+Menu -- Leaderboard  
+Menu -- Profilo 
 Menu -- Partita
-Menu -- Profilo
-Menu -- Leaderboard
-Partita -- Character
-Partita -- Mappa
-Partita -- Ostacoli %% ostacoli possiamo collegarlo a mappa
-
-%% livelli?
-
-%% Partita -- Profilo
-%% Partita -- Character
-%% Partita -- Mappa
-%% Partita -- Ostacoli
+Partita *-- Character 
+Partita *-- Mappa 
+Mappa *-- Ostacolo
 
