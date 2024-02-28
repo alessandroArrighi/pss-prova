@@ -33,3 +33,49 @@ Movimento dello schermo
 ///////////////////////////
 
 
+
+%% Partita, Character, Mappa, Ostacoli, Menu. Profilo, Leaderboard
+classDiagram
+
+class Partita
+<<interface>> Partita
+
+class Character
+<<interface>> Character
+
+class Mappa
+<<interface>> Mappa
+
+class Ostacoli
+<<interface>> Ostacoli
+
+class Menu
+<<interface>> Menu
+
+class Profilo
+<<interface>> Profilo
+
+class Leaderboard
+<<interface>> Leaderboard
+
+
+
+%% AI --* Personality
+%% AI -- Suggestion
+%% AI -- Event
+%% AI --o Kitchen
+
+Menu -- Partita
+Menu -- Profilo
+Menu -- Leaderboard
+Partita -- Character
+Partita -- Mappa
+Partita -- Ostacoli %% ostacoli possiamo collegarlo a mappa
+
+%% livelli?
+
+%% Partita -- Profilo
+%% Partita -- Character
+%% Partita -- Mappa
+%% Partita -- Ostacoli
+
