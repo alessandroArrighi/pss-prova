@@ -33,9 +33,7 @@ Movimento dello schermo
 ///////////////////////////
 
 
-
-%% Partita, Character, Mappa, Ostacoli, Menu. Profilo, Leaderboard 
-
+```mermaid
 classDiagram
 
 class Partita {
@@ -82,4 +80,4 @@ Menu -- Partita
 Partita *-- Character 
 Partita *-- Mappa 
 Mappa *-- Ostacolo
-
+```
