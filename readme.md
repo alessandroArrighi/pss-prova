@@ -39,12 +39,14 @@ classDiagram
 class Partita {
     +getScore()
     +collision(Ostacolo, Character)?
+    +setDifficulty()
     %% da vedere, se la funzione è corretta
 }
 <<interface>> Partita
 
 class Character {
     +getPosition()
+    +jump()
 }
 <<interface>> Character
 
@@ -60,13 +62,14 @@ class Ostacolo {
 class Menu {
     +startGame()
     +createProfile()
-    +viewScores(Profilo)
+    +viewProfile(Profile)
     +viewLeaderboard()
 }
 <<interface>> Menu
 
 class Profilo {
-    +setScore()?
+    +setScore()
+    +getScores()
     %% da vedere, se lasciare sottinteso in LB il passaggio dei punteggi
 }
 <<interface>> Profilo
