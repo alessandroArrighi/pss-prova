@@ -84,3 +84,40 @@ Partita *-- Character
 Partita *-- Mappa 
 Mappa *-- Ostacolo
 ```
+
+```
+classDiagram
+
+class Profilo {
+    +setScore()
+}
+
+class Leaderboard {
+    +updateLB()
+}
+
+class GameMotor {
+    +launchGame()
+    +stop()
+}
+
+class Game {
+    +setProfile() Profilo
+    
+}
+
+class Window
+
+class GameGui {
+    +drawGame()
+}
+
+
+GameMotor -- Game
+Game *-- Profilo
+Leaderboard -- Profilo
+GameMotor -- Leaderboard
+GameMotor -- Profilo
+GameMotor -- Window
+Window -- GameGui
+```
